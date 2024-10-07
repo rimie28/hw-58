@@ -9,7 +9,7 @@ interface Props {
 const Modal:React.FC<Props> = ({show, onClose}) => {
   return (
     <>
-      <Backdrop show={show}/>
+      <Backdrop show={show} onClick={onClose}/>
       <div className="modal show" style={{display: show ? 'block' : 'none'}}>
         <div className="modal-dialog">
           <div className="modal-content">
